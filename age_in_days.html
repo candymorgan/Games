@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculation in days</title>
+    <link rel="stylesheet" href="css/age_in_days.css">
+
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Challenge 1: Your Age in Days</h1>
+        <div class="btn_container">
+            <div class="click_btn">
+                <button onclick="question()" class="btn1">click me</button>
+            </div>
+            <div class="reset_btn">
+                <button onclick="reset_button()" class="btn2">reset</button>
+            </div>
+        </div>
+        <div id="answer"></div>
+        <div id="age_result"></div>
+
+
+        <h1>Challenge 2: Img Generator</h1>
+        <button class="img_btn" onclick="imgGenerator()" class="btn3">Generate Img</button>
+        <button class="del" onclick="del()" class="btn4">Delete</button>
+        <div id="img_container"></div>
+
+        <h1>Challenge 3: Rock, Paper, Scissors</h1>
+        <h2>Choose Your Game!!</h2>
+        <div id="games">
+            <img id="rock" src="img/rock2a.jpg" alt="" onclick="games()">
+            <img id="paper" src="img/paper2.jpg" alt="" onclick="paper()">
+            <img id="scissors" src="img/scissors.jpg" alt="" onclick="scissors()">
+            <div id="imgcont"></div>
+        </div>
+
+        <h1>Challenge 4: Change The Colour of All Buttons</h1>
+        <div id="all_buttons">
+            <form action="">
+                <select name="" id="select_me" onchange="btn_change()">
+                    <option value="Random">Random</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Reset">Reset</option>
+                </select>
+            </form>
+            <button id="btn_red" class="btn5">Red</button>
+            <button id="btn_blue" class="btn6">Blue</button>
+            <button id="btn_green" class="btn7">Green</button>
+
+        </div>
+
+        <h1>Challenge 5: Blackjack</h1>
+        <h3 class="displayMsg">Let's play</h3>
+
+        <div class="blackjack_mainCont">
+            <div class="subCont">
+                <h3>You: <span id="h3">0</span></h3>
+                <div class="you_container"></div>
+                
+
+            </div>
+            <div class="subCont">
+                <h3>Dealer: <span id="delh3">0</span></h3>
+                <div class="dealer_container"></div>
+            </div>
+
+
+        </div>
+
+
+        <div class="choices">
+            <button class="btn_hit">Hit</button>
+            <button class="btn_stand">Stand</button>
+            <button onclick="dealFunc()" class="btn_deal">Deal</button>
+        </div>
+
+        <div class="table_container">
+
+            <table>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+                <tr>
+                    <td class="win">0</td>
+                    <td class="loss">0</td>
+                    <td class="draw">0</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="js/age_in_days.js"></script>
+</body>
+
+</html>
